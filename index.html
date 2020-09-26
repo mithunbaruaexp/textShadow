@@ -1,0 +1,19 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MithunsProject</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="text" id="text" contenteditable="">বাবু খাইসো?</div>
+    <script type="text/javascript">
+      var text = document.getElementById("text");
+      var shadow = "";
+      for (var i = 0; i < 50; i++) {
+        shadow += (shadow ? "," : "") + i * 1 + "px " + i * 1 + "px 0 #01ded3";
+      }
+      text.style.textShadow = shadow;
+    </script>
+  </body>
+</html>
